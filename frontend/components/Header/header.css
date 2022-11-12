@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Teko:wght@500&display=swap');
+
+
+header{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: darkgoldenrod;
+}
+
+li{
+    font-size: 1.2em;
+    padding: 0.5em;
+    font-family: 'Teko', sans-serif;
+}
