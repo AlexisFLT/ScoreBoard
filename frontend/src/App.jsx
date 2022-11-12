@@ -1,15 +1,20 @@
-import FamilyMember from "@components/FamilyMember";
+// eslint-disable-next-line import/no-unresolved
+import Compteur from "@components/Compteur/Compteur";
+// eslint-disable-next-line import/no-unresolved
+import Header from "@components/Header/Header";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Simpsons</h1>
-      <FamilyMember firstName="Homer" />
-      <FamilyMember firstName="Marge" />
-      <FamilyMember firstName="Bart" />
-      <FamilyMember firstName="Lisa" />
-      <FamilyMember firstName="Maggie" hasFood />
+      <header>
+        <Header />
+      </header>
+      <body>
+        <section>
+          <Compteur />
+        </section>
+      </body>
     </div>
   );
 }

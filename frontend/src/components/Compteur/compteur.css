@@ -27,6 +27,7 @@ body {
 h1 {
     font-size: 2.5rem;
     font-family: 'Teko', sans-serif;
+    text-align: center;
 }
 
 p {
@@ -41,17 +42,29 @@ p {
     background-color: white;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    font-size: 1.5em;
+    font-size: 0.8em;
+}
+
+.btnNewP{
+    padding: 0.5em;
+    background-color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-size: 1.2em;
+
 }
 
 .newPlayer {
     margin-top: 5%;
+    text-align: center;
 }
 
 .j1Color {
     color: blue;
+    text-align: center;
 }
 
 .j2Color {
     color: red;
+    text-align: center;
 }
