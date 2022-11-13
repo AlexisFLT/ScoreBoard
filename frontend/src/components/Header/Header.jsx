@@ -2,17 +2,9 @@ import React from "react";
 import "./header.css";
 
 function Header() {
-  // const logo = (
-  //   <img
-  //     src={../../assets/logoMinis&Bros.svg}
-  //     className="logo"
-  //     alt="standard"
-  //   />
-  // );
-
   return (
     <nav>
-      {/* <div>{logo}</div> */}
+      <div className="logo" />
       <ul>
         <li className="imageStandard image">
           <p className="texte">Standard</p>

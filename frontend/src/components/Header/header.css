@@ -5,31 +5,39 @@ header{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+
 ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-color: darkgoldenrod;
 }
 
 .texte{
-    font-size: 1.2em;
-    padding: 0.5em;
+    font-size: inherit;
+    padding-top: 1.25vh;
     font-family: 'Teko', sans-serif;
     color:antiquewhite;
-    text-shadow: black 0, 0, 0;
+    text-align: center;
 }
 
 .logo{
-    color: black;
-    border: solid 1px yellowgreen;
+    background-image: url(../../assets/logoMinis&Bros.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 5vh;
+    width: 10vw;
+    z-index: 100;
+
+    
 }
 
 .imageStandard{
-    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/jds.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 5vh;
+    width: 10vw;
 
     
 }
@@ -39,6 +47,8 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 5vh;
+    width: 10vw;
 
 }
 
@@ -47,6 +57,8 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 5vh;
+    width: 10vw;
 
 }
 
@@ -55,6 +67,8 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 5vh;
+    width: 10vw;
 
 }
 
@@ -63,5 +77,7 @@ ul{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    height: 5vh;
+    width: 10vw;
 
 }
