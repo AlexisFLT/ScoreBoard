@@ -10,6 +10,11 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
+}
+
+a{
+    text-decoration: none;
 }
 
 .texte{
