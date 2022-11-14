@@ -1,6 +1,7 @@
 import "./src/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
+import Welcome from "@components/Welcome/Welcome";
 import NavBar from "@components/NavBar/NavBar";
 import Home from "./src/pages/Home";
 import Standard from "./src/pages/Standard";
@@ -17,15 +18,18 @@ export default function App() {
       <div>
         <header>
           <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Standard" element={<Standard />} />
+            <Route path="/GameOfThrones" element={<GameOfThrones />} />
+            <Route path="/MCP" element={<MCP />} />
+            <Route path="/SWL" element={<SWL />} />
+            <Route path="/TwilightImperium" element={<TwilightImperium />} />
+          </Routes>
         </header>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Standard" element={<Standard />} />
-          <Route path="/GameOfThrones" element={<GameOfThrones />} />
-          <Route path="/MCP" element={<MCP />} />
-          <Route path="/SWL" element={<SWL />} />
-          <Route path="/TwilightImperium" element={<TwilightImperium />} />
-        </Routes>
+        <body>
+          <Welcome />
+        </body>
       </div>
     </Router>
   );
