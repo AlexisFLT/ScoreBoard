@@ -1,4 +1,13 @@
-p{
+.choose{
     font-size: 1em;
+    text-align: center;
+    margin-bottom: 5%;
     font-family: 'Press Start 2P', cursive;
+}
+
+.welcomeTitle{
+    margin: 5% auto;
+    font-size: 2.5em;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
 }

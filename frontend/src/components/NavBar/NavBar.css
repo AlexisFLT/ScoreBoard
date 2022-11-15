@@ -1,29 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Teko:wght@500&display=swap');
 
 
-header{
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(116, 114, 114, 0.23) 0px 6px 6px;
-}
-
-
-a{
-    text-decoration: none;
+.navbar{
+    display: flex;
+    justify-content: space-between;
 }
 
 .homeText{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-family: 'Teko', sans-serif;
     color:antiquewhite;
-    text-align: center;
+    margin-right: 0.2em;
+
 }
 
 .logo{
     background-image: url(../../assets/logoMinis&Bros.svg);
     background-repeat: no-repeat;
-    position: absolute;
     height: 5vh;
-    width: 10vw;
-    z-index: 100;
+    width: 50%;
 
     
 }

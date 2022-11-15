@@ -4,34 +4,34 @@ import "./games.css";
 export default function Games() {
   return (
     <section className="gamesList">
-      <ul className="leftList">
-        <li className="imageStandard image">
-          <Link to="/Standard">
+      <ul className="gamesColumn">
+        <Link to="/Standard">
+          <li className="imageStandard image">
             <p className="texte">Standard</p>
-          </Link>
-        </li>
-        <li className="imageTDF image">
-          <Link to="/GameOfThrones">
+          </li>
+        </Link>
+
+        <Link to="/GameOfThrones">
+          <li className="imageTDF image">
             <p className="texte">Game of Thrones</p>
-          </Link>
-        </li>
-        <li className="imageMCP image">
-          <Link to="/MCP">
+          </li>
+        </Link>
+        <Link to="/MCP">
+          <li className="imageMCP image">
             <p className="texte">Marvel Crisis Protocol</p>
-          </Link>
-        </li>
-      </ul>
-      <ul className="rightList">
-        <li className="imageSWL image">
-          <Link to="/SWL">
+          </li>
+        </Link>
+
+        <Link to="/SWL">
+          <li className="imageSWL image">
             <p className="texte">Star Wars Legion</p>
-          </Link>
-        </li>
-        <li className="imageTI image">
-          <Link to="TwilightImperium">
+          </li>
+        </Link>
+        <Link to="TwilightImperium">
+          <li className="imageTI image">
             <p className="texte">Twilight Imperium</p>
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </section>
   );

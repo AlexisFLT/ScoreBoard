@@ -10,11 +10,12 @@ header{
     display: flex;
     justify-content: space-evenly;
     flex-flow: nowrap ;
-    position: relative;
+
 }
 
 a{
     text-decoration: none;
+
 }
 
 .texte{
@@ -22,18 +23,25 @@ a{
     font-family: 'Teko', sans-serif;
     color:antiquewhite;
     position: absolute;
+    font-size: 1.5em;
+    right: 2%;
+    
+    bottom: 12.5vh;
+    margin: auto;
+    
 
 }
 
 .image{
-    height: 35vh;
-    width: 40vw;
-    aspect-ratio: 1;
+    height: 25vh;
+    aspect-ratio: 16/9;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 0.5em;
-    display: flex;
+    margin: 1em auto;
+    border-radius: 0.5em;
+    position: relative;
+
 }
 
 .imageStandard{

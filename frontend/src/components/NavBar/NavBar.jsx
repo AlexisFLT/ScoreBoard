@@ -3,15 +3,14 @@ import { Link } from "react-router-dom";
 import "./NavBar.css";
 
 function NavBar() {
-  // let activeStyle = {
-  //   textDecoration: "none",
-  // };
   return (
     <nav>
-      <div className="logo" />
-      <ul>
-        <li className="homeText">
-          <Link to="/">Home</Link>
+      <ul className="navbar">
+        <li className="logo" />
+        <li className="home">
+          <Link to="/">
+            <p className="homeText">Home</p>
+          </Link>
         </li>
       </ul>
     </nav>
