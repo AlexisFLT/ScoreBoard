@@ -1,11 +1,19 @@
-header{
-    height: 5vh;
-    background-color: darkgoldenrod;
-    position: relative;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(116, 114, 114, 0.23) 0px 6px 6px;
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Modak&display=swap');
+:root{
+    --colorBackground: #5AA3BF;
+    --colorSecondary: #6B0505;
+    --colorThird: #D2820B;
+    --heightMain: 98vh;
+    --heightHeader:2vh;
+    --fontFamily: 'Modak', cursive;
+    --fontFamilySecondary:  'Forum', cursive;
+    --fontSize: 2rem;
 }
 
+
+
+
 body{
-    background-color:antiquewhite;
+    background-color: var(--colorBackground);
 }
 

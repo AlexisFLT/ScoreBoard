@@ -7,9 +7,7 @@ import React from "react";
 export default function Standard() {
   return (
     <main>
-      <header>
-        <NavBar />
-      </header>
+      <NavBar />
       <h1>Standard</h1>
       <body>
         <section className="newPlayer">

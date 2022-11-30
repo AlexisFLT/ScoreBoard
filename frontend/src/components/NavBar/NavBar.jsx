@@ -4,16 +4,17 @@ import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav>
-      <ul className="navbar">
-        <li className="logo" />
-        <li className="home">
-          <Link to="/">
-            <p className="homeText">Home</p>
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul className="navbar">
+          <li className="home">
+            <Link to="/">
+              <p className="homeText hidden">Home</p>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

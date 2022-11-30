@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
 import Home from "./src/pages/Home";
 import Standard from "./src/pages/Standard";
-import GameOfThrones from "./src/pages/GameOfThrones";
+import GameOfThrones from "./src/pages/GameOfThrones/GameOfThrones";
 import MCP from "./src/pages/MCP";
 import SWL from "./src/pages/SWL";
 import TwilightImperium from "./src/pages/TwilightImperium";

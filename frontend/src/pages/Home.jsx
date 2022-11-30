@@ -7,9 +7,7 @@ import Welcome from "@components/Welcome/Welcome";
 export default function Home() {
   return (
     <div>
-      <header>
-        <NavBar />
-      </header>
+      <NavBar />
       <section className="welcome">
         <Welcome />
       </section>

@@ -1,24 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Teko:wght@500&display=swap');
+
+
+header{  
+    background-color: var(--colorSecondary);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(116, 114, 114, 0.23) 0px 6px 6px;
+    width: 70vw;
+    border-radius: 0 0 10px 10px;
+    height: 15vh;
+    position: absolute;
+    top: -13vh;
+    right: 15%;
+    margin: auto;
+
+}
+
+header:hover{
+    transform: translateY(13vh);
+    transition: all 1s linear;
+
+}
 
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    height: 15vh;
 }
 
 .homeText{
+    animation-name: hidden;
     font-size: 1.5em;
     font-family: 'Teko', sans-serif;
     color:antiquewhite;
     margin-right: 0.2em;
 
-}
-
-.logo{
-    background-image: url(../../assets/logoMinis&Bros.svg);
-    background-repeat: no-repeat;
-    height: 5vh;
-    width: 50%;
-
-    
 }
