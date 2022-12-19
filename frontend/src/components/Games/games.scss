@@ -1,0 +1,65 @@
+@use "../../App";
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&family=Teko:wght@500&display=swap");
+
+header {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.gamesList {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: nowrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+.texte {
+  font-size: inherit;
+  font-family: App.$fontFamily;
+  color: App.$colorThird;
+  position: absolute;
+  font-size: 1em;
+  right: 2%;
+  bottom: 12.5vh;
+  margin: auto;
+}
+
+.image {
+  height: 25vh;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1em auto;
+  border-radius: 1em;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.imageStandard {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/jds.jpg");
+}
+
+.imageTDF {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://cf.geekdo-images.com/M_7UvwZvuxBVjxdadsa5AA__original/img/3tv6H7jX5T9rqwuI84YZKZDBGcw=/0x0/filters:format(jpeg)/pic1077906.jpg");
+}
+
+.imageMCP {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://cf.geekdo-images.com/qzvuszcVVnu6lTO5W7T39Q__original/img/AM-ZZ87dK8FctHnyZMebWtmOXbA=/0x0/filters:format(jpeg)/pic4880040.jpg");
+}
+
+.imageSWL {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://cf.geekdo-images.com/pttzJMbECpFBL_h5tD6SaA__original/img/rXzpLhn0vPKerOglFVoRk_J4NIY=/0x0/filters:format(jpeg)/pic3764376.jpg");
+}
+
+.imageTI {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://cf.geekdo-images.com/_Ppn5lssO5OaildSE-FgFA__original/img/kVpZ0Maa_LeQGWxOqsYKP3N4KUY=/0x0/filters:format(jpeg)/pic3727516.jpg");
+}

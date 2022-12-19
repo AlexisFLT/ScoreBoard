@@ -1,0 +1,8 @@
+@use "../src/App.scss";
+
+body {
+  background-color: App.$colorBackground;
+  height: App.$heightMain;
+  margin: 0;
+  padding: 0;
+}

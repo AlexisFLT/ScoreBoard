@@ -1,3 +1,4 @@
+import "./home.scss";
 import React from "react";
 // eslint-disable-next-line import/no-unresolved
 import NavBar from "@components/NavBar/NavBar";
@@ -6,11 +7,15 @@ import Welcome from "@components/Welcome/Welcome";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <NavBar />
-      <section className="welcome">
-        <Welcome />
-      </section>
-    </div>
+      <body className="Home">
+        <main>
+          <section className="welcome">
+            <Welcome />
+          </section>
+        </main>
+      </body>
+    </>
   );
 }

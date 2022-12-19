@@ -1,0 +1,53 @@
+@use "../../App";
+
+.blockHowMany {
+  background-color: App.$colorHMPl;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 1em;
+  height: calc((App.$heightMain) / 2);
+  width: 80%;
+  margin: auto;
+  position: absolute;
+  margin-top: 30%;
+  margin-left: 10%;
+}
+
+.howMany {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 40%;
+  left: 20%;
+}
+
+.howManyText {
+  font-family: App.$fontFamily;
+}
+.optionGOT,
+.howManyGOT,
+.OKbtn {
+  font-family: App.$fontFamilySecondary;
+}
+
+.howManyText,
+.optionGOT,
+.howManyGOT,
+.OKbtn {
+  color: App.$colorThird;
+  font-size: calc(App.$fontSize/1.5);
+  border: none;
+}
+.howManyGOT {
+  width: 10%;
+  text-align: center;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: #111111;
+  border-radius: 10px;
+}
+
+.OKbtn {
+  background-color: #111111;
+  margin-left: 0.5em;
+  border-radius: 10px;
+}
