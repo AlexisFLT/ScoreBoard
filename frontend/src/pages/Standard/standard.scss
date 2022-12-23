@@ -1,0 +1,21 @@
+@use "../../App";
+
+.standardTitle{
+    margin-top: 10%;
+    text-align: center;
+    font-family: App.$fontFamily;
+    color: App.$colorSecondary;
+    font-size: App.$fontSize;
+}
+
+.playerBox{
+    border: yellowgreen 1px solid;
+    height: 15vh;
+    margin-top: 10%;
+}
+
+.playerName{
+    text-align: center;
+    font-family: App.$fontFamily;
+    font-size: calc(App.$fontSize / 1.5);
+}

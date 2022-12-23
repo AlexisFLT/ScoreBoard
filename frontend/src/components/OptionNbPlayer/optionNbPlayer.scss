@@ -1,5 +1,13 @@
 @use "../../App";
 
+.gameOfThrones {
+  height: App.$heightMain;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/gotboard.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .blockHowMany {
   background-color: App.$colorHMPl;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
@@ -38,7 +46,7 @@
   border: none;
 }
 .howManyGOT {
-  width: 10%;
+  width: 20%;
   text-align: center;
   margin-left: 15%;
   margin-top: 5%;

@@ -15,14 +15,15 @@ header {
 
 header:hover {
   transform: translateY(13vh);
-  transition: all 1s linear;
+  transition: all 0.3s linear;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 15vh;
+  height: 10vh;
+
 }
 
 .homeText {

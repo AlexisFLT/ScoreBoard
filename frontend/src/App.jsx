@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
 import OptionNbPlayer from "@components/OptionNbPlayer/OptionNbPlayer";
+import GotPlayerCounter from "@components/GotPlayerCounter/GotPlayerCounter";
 import Home from "./pages/Home/Home";
 import Standard from "./pages/Standard/Standard";
 import GameOfThrones from "./pages/GameOfThrones/GameOfThrones";
@@ -17,6 +18,10 @@ export default function App() {
       <Route
         path="/GameOfThrones/OptionNbPlayers"
         element={<OptionNbPlayer />}
+      />
+      <Route
+        path="/GameOfThrones/OptionNbPlayers/GoTCounter"
+        element={<GotPlayerCounter />}
       />
       <Route path="/MCP" element={<MCP />} />
       <Route path="/SWL" element={<SWL />} />

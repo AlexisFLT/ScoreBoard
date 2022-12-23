@@ -1,5 +1,5 @@
 import React from "react";
-import "./compteur.css";
+import "./compteur.scss";
 
 export default function Compteur() {
   const [nbClicks, setNbClicks] = React.useState(0);
