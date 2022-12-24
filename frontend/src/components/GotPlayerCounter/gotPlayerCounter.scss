@@ -1,9 +1,0 @@
-@use "../../App";
-
-.gameOfThrones {
-    height: App.$heightMain;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("../../assets/gotboard.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }

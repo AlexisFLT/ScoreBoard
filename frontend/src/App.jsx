@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 // eslint-disable-next-line import/no-unresolved
 import OptionNbPlayer from "@components/OptionNbPlayer/OptionNbPlayer";
-import GotPlayerCounter from "@components/GotPlayerCounter/GotPlayerCounter";
+import GotPlayerCounter from "@components/PlayerCounter/PlayerCounter";
 import Home from "./pages/Home/Home";
 import Standard from "./pages/Standard/Standard";
 import GameOfThrones from "./pages/GameOfThrones/GameOfThrones";

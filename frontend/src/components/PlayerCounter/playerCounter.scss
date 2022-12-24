@@ -1,0 +1,38 @@
+@use "../../App";
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: calc(App.$heightPlayerCounter / 4);
+}
+
+.clickPlus,
+.clickMinus {
+  background-color: #062b56;
+  border: none;
+  font-size: App.$fontSize;
+  color: white;
+}
+
+.player {
+  background-color: #062b56;
+  height: App.$heightPlayerCounter;
+  margin-top: calc(App.$heightMain - 95vh);
+  margin-left: App.$smallGap;
+  margin-right: App.$smallGap;
+  border-radius: App.$smallGap;
+}
+
+.playerName {
+  text-align: center;
+  font-family: App.$fontFamilyThird;
+  font-size: calc(App.$fontSize / 1.5);
+  padding-top: calc(App.$heightPlayerCounter / 6);
+  color: white;
+}
+
+.score {
+  font-family: App.$fontFamilyThird;
+  color: white;
+  font-size: App.$fontSize;
+}
