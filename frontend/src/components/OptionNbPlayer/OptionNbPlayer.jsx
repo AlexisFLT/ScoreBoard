@@ -4,7 +4,7 @@ import { useState } from "react";
 import "./optionNbPlayer.scss";
 
 export default function OptionNbPlayer() {
-  const [number, setNumber] = useState("");
+  const [number, setNumber] = useState("---");
   const hNumber = () => {
     setNumber(number);
   };
@@ -30,22 +30,22 @@ export default function OptionNbPlayer() {
                 <option className="optionGOT" value="2">
                   2 ? Come back with some friends
                 </option>
-                <option className="optionGOT" value={number}>
+                <option className="optionGOT" value="3">
                   3
                 </option>
-                <option className="optionGOT" value={number}>
+                <option className="optionGOT" value="4">
                   4
                 </option>
-                <option className="optionGOT" value={number}>
+                <option className="optionGOT" value="5">
                   5
                 </option>
-                <option className="optionGOT" value={number}>
+                <option className="optionGOT" value="6">
                   6
                 </option>
-                <option className="optionGOT" value={number}>
+                <option className="optionGOT" value="7">
                   7
                 </option>
-                <option className="optionGOT" value={number}>
+                <option className="optionGOT" value="8">
                   8
                 </option>
               </select>

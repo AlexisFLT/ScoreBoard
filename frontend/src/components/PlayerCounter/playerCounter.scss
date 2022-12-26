@@ -21,6 +21,7 @@
   margin-left: App.$smallGap;
   margin-right: App.$smallGap;
   border-radius: App.$smallGap;
+  position: relative;
 }
 
 .playerName {
@@ -35,4 +36,38 @@
   font-family: App.$fontFamilyThird;
   color: white;
   font-size: App.$fontSize;
+}
+
+.inputName {
+  position: absolute;
+  left: 19%;
+  margin-top: calc(App.$heightMain - 97vh);
+  height: App.$fontSize;
+  width: auto;
+  background-color: #062b56;
+  border: 1px solid white;
+  font-family: App.$fontFamilyThird;
+  color: white;
+  font-size: calc(App.$fontSize / 1.5);
+  text-align: center;
+}
+
+.clickButton {
+  position: absolute;
+  right: 5%;
+  top: calc(App.$heightMain - 97vh);
+  background-color: #062b56;
+  border: none;
+  font-size: App.$fontSize;
+  color: white;
+}
+
+.editButton {
+  position: absolute;
+  background-color: #062b56;
+  border: none;
+  color: white;
+  font-size: 1em;
+  right: 0;
+  padding: 0.5em;
 }
