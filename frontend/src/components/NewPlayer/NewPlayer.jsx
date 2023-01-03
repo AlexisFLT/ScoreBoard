@@ -1,18 +1,22 @@
 // eslint-disable-next-line import/no-unresolved
-import Compteur from "@components/Compteur/Compteur";
+import PlayerCounter from "@components/PlayerCounter/PlayerCounter";
 import { useState } from "react";
 
 export default function NewPlayer() {
   const [addP, setAddP] = useState([]);
 
   const onAddBtnClick = () => {
-    setAddP(addP.concat(<Compteur key={addP.length} />));
+    setAddP(
+      addP.concat(
+        <PlayerCounter key={addP.length} style={{ backgroundColor: "red" }} />
+      )
+    );
   };
 
   return (
     <div>
       <button type="button" onClick={onAddBtnClick}>
-        New Player
+        Add Player
       </button>
       {addP}
     </div>

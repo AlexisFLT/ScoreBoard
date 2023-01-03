@@ -2,7 +2,8 @@ import "./standard.scss";
 // eslint-disable-next-line import/no-unresolved
 import NavBar from "@components/NavBar/NavBar";
 import React from "react";
-import PlayerCounter from "@components/PlayerCounter/PlayerCounter";
+// import PlayerCounter from "@components/PlayerCounter/PlayerCounter";
+import NewPlayer from "@components/NewPlayer/NewPlayer";
 
 export default function Standard() {
   return (
@@ -12,7 +13,7 @@ export default function Standard() {
         <h1 className="standardTitle">Let's play !</h1>
         <section className="playerBox">
           <section className="newPlayer">
-            <PlayerCounter />
+            <NewPlayer style={{ backgroundColor: "red" }} />
           </section>
         </section>
       </section>

@@ -38,7 +38,7 @@ export default function PlayerCounter() {
   const nameEdit = () => {
     document.getElementById("clickButton").style.display = "unset";
     document.getElementById("inputName").style.display = "unset";
-    document.getElementById("edit").style.display = "none";
+    document.getElementById("edit").style.opacity = 0;
   };
 
   return (

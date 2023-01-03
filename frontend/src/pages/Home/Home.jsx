@@ -9,13 +9,11 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <body className="Home">
-        <main>
-          <section className="welcome">
-            <Welcome />
-          </section>
-        </main>
-      </body>
+      <div className="Home">
+        <section className="welcome">
+          <Welcome />
+        </section>
+      </div>
     </>
   );
 }

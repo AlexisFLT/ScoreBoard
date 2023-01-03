@@ -17,7 +17,7 @@
 .player {
   background-color: #062b56;
   height: App.$heightPlayerCounter;
-  margin-top: calc(App.$heightMain - 95vh);
+  margin-top: calc(App.$heightMain - 99vh);
   margin-left: App.$smallGap;
   margin-right: App.$smallGap;
   border-radius: App.$smallGap;
@@ -28,7 +28,7 @@
   text-align: center;
   font-family: App.$fontFamilyThird;
   font-size: calc(App.$fontSize / 1.5);
-  padding-top: calc(App.$heightPlayerCounter / 6);
+  padding-top: calc(App.$heightPlayerCounter / 5);
   color: white;
 }
 
@@ -47,7 +47,8 @@
   background-color: #062b56;
   border: 1px solid white;
   font-family: App.$fontFamilyThird;
-  color: white;
+  color: gray;
+  font-style: italic;
   font-size: calc(App.$fontSize / 1.5);
   text-align: center;
 }
