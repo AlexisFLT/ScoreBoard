@@ -6,9 +6,9 @@ header {
     rgba(116, 114, 114, 0.23) 0px 6px 6px;
   width: 70vw;
   border-radius: 0 0 10px 10px;
-  height: 15vh;
+  height: 30vh;
   position: absolute;
-  top: -13vh;
+  top: -25vh;
   right: 15%;
   margin: auto;
 }
@@ -22,13 +22,15 @@ header:hover {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 10vh;
 }
 
-.homeText {
-  animation-name: hidden;
-  font-size: 1.5em;
-  font-family: "Teko", sans-serif;
-  color: antiquewhite;
-  margin-right: 0.2em;
+.logo {
+  height: 9em;
+  padding-top: 80%;
+  // right: 25%;
+  // left: 25%;
+}
+
+.translate {
+  transform: translateY(100px);
 }

@@ -11,10 +11,8 @@ export default function Standard() {
       <NavBar />
       <section>
         <h1 className="standardTitle">Let's play !</h1>
-        <section className="playerBox">
-          <section className="newPlayer">
-            <NewPlayer style={{ backgroundColor: "red" }} />
-          </section>
+        <section className="newPlayer">
+          <NewPlayer />
         </section>
       </section>
     </>

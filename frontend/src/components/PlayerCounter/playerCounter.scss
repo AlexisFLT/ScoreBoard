@@ -1,54 +1,66 @@
 @use "../../App";
 
+.hidden {
+  visibility: hidden;
+}
+
 .buttons {
   display: flex;
   justify-content: space-evenly;
-  margin-top: calc(App.$heightPlayerCounter / 4);
 }
 
 .clickPlus,
 .clickMinus {
-  background-color: #062b56;
   border: none;
   font-size: App.$fontSize;
-  color: white;
+  color: App.$colorText;
 }
 
 .player {
-  background-color: #062b56;
+  display: flex;
+  flex-direction: column;
   height: App.$heightPlayerCounter;
-  margin-top: calc(App.$heightMain - 99vh);
+  margin-top: 1%;
   margin-left: App.$smallGap;
   margin-right: App.$smallGap;
-  border-radius: App.$smallGap;
   position: relative;
+  border-radius: 1em;
+}
+
+.playerNameFinal {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
 }
 
 .playerName {
-  text-align: center;
   font-family: App.$fontFamilyThird;
   font-size: calc(App.$fontSize / 1.5);
-  padding-top: calc(App.$heightPlayerCounter / 5);
-  color: white;
+  color: App.$colorText;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.formPlayer {
+  padding-top: 5%;
 }
 
 .score {
   font-family: App.$fontFamilyThird;
-  color: white;
+  color: App.$colorText;
   font-size: App.$fontSize;
 }
 
+//
+
 .inputName {
   position: absolute;
-  left: 19%;
-  margin-top: calc(App.$heightMain - 97vh);
-  height: App.$fontSize;
-  width: auto;
-  background-color: #062b56;
-  border: 1px solid white;
+  left: 25%;
+  width: 50%;
+  border: 1px solid App.$colorText;
   font-family: App.$fontFamilyThird;
-  color: gray;
-  font-style: italic;
+  color: App.$colorText;
   font-size: calc(App.$fontSize / 1.5);
   text-align: center;
 }
@@ -56,19 +68,20 @@
 .clickButton {
   position: absolute;
   right: 5%;
-  top: calc(App.$heightMain - 97vh);
-  background-color: #062b56;
+  top: calc(App.$heightMain - 98vh);
   border: none;
   font-size: App.$fontSize;
-  color: white;
+  color: App.$colorText;
 }
 
 .editButton {
+  display: none;
   position: absolute;
-  background-color: #062b56;
   border: none;
-  color: white;
+  color: App.$colorText;
   font-size: 1em;
+  top: 0;
   right: 0;
   padding: 0.5em;
+  border-radius: 1em;
 }

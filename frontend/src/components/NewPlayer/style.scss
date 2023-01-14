@@ -1,0 +1,12 @@
+@use "../../App.scss";
+
+.buttonNP {
+  display: block;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  color: App.$colorText;
+  font-size: 2em;
+  border: none;
+  background-color: App.$colorBackground;
+}

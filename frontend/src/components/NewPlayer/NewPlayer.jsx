@@ -1,22 +1,20 @@
 // eslint-disable-next-line import/no-unresolved
+import { AiOutlineUserAdd } from "react-icons/ai";
 import PlayerCounter from "@components/PlayerCounter/PlayerCounter";
+import "./style.scss";
 import { useState } from "react";
 
 export default function NewPlayer() {
   const [addP, setAddP] = useState([]);
 
   const onAddBtnClick = () => {
-    setAddP(
-      addP.concat(
-        <PlayerCounter key={addP.length} style={{ backgroundColor: "red" }} />
-      )
-    );
+    setAddP(addP.concat(<PlayerCounter key={addP.length} />));
   };
 
   return (
     <div>
-      <button type="button" onClick={onAddBtnClick}>
-        Add Player
+      <button type="button" className="buttonNP" onClick={onAddBtnClick}>
+        <AiOutlineUserAdd />
       </button>
       {addP}
     </div>
