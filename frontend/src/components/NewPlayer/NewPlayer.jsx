@@ -12,7 +12,7 @@ export default function NewPlayer() {
   };
 
   return (
-    <div>
+    <div className="blockNP">
       <button type="button" className="buttonNP" onClick={onAddBtnClick}>
         <AiOutlineUserAdd />
       </button>

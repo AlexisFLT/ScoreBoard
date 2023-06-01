@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Modak&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
-$colorBackground: /* #5aa3b. */ #31223b;
+$colorBackground: /* #5aa3b. */ #312240;
 $colorSecondary:/* #6b0505 */ #0d0d0d;
 $colorThird: /*#d2820b*/ #f26a1b;
 $colorText: #ccbbf2;
 $colorHMPl: #262626;
 $heightMain: 100vh;
-$heightPlayerCounter: 18vh;
+$heightPlayerCounter: 20vh;
+$heightGameCard: 20vh;
 $heightHeader: 2vh;
 $fontFamily: "Modak", cursive;
 $fontFamilySecondary: "Forum", cursive;
@@ -26,13 +27,4 @@ $smallGap: 0.5em;
 
 .Standard {
   background-color: $colorBackground;
-  // height: var(--heightMain);
 }
-
-// .gameofThrones {
-//   // height: var(--heightMain);
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-//     url("../src/assets/gotboard.jpeg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }

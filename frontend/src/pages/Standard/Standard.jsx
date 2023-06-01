@@ -10,7 +10,10 @@ export default function Standard() {
     <>
       <NavBar />
       <section>
-        <h1 className="standardTitle">Let's play !</h1>
+        <h1 className="standardTitle">Pick a game !</h1>
+        <option>
+          <select>1</select>
+        </option>
         <section className="newPlayer">
           <NewPlayer />
         </section>

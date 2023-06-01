@@ -10,3 +10,14 @@
   border: none;
   background-color: App.$colorBackground;
 }
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 800px) and (orientation:landscape){
+  .blockNP{
+    display: flex;
+    margin-top: 20%;
+  }
+  .buttonNP{
+    position: absolute;
+  }
+
+}

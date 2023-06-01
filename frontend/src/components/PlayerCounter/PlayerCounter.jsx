@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useRef, useState } from "react";
 import {
   AiOutlinePlusSquare,
@@ -18,15 +19,17 @@ export default function PlayerCounter() {
   }
 
   const [bgColor, setBgColor] = useState("#062b56");
-  const [name, setName] = useState("Name ?");
+  const [name, setName] = useState({
+    nickname: "",
+  });
 
   const inputNameRef = useRef(null);
   const playerNameRef = useRef(null);
   const clickButtonRef = useRef(null);
   const editButtonRef = useRef(null);
 
-  const handleName = (event) => {
-    setName(event.target.value);
+  const handleName = (evt) => {
+    setName({ ...name, nickname: evt.target.value });
   };
 
   return (
@@ -40,27 +43,27 @@ export default function PlayerCounter() {
           playerNameRef.current.classList.add("playerName");
           clickButtonRef.current.classList.add("hidden");
           editButtonRef.current.style.display = "unset";
+          axios
+            .post(`${import.meta.env.VITE_BACKEND_URL}/player`, name)
+            .catch(() => {
+              // console.error(err);
+            });
+          // console.log(name);
           function getRandomColor() {
             const colors = [
-              "#6b0505",
-              "#E800C3",
-              "#860909",
-              "#0e4b06",
-              "#4b0636;",
-              "#000000",
-              "#06414b",
-              "#FFFFFF",
-              "#EA5705",
-              "#E800C3",
-              "#57391D",
-              "#1E1E1E",
+              "#0956DB" /* BLUE */,
+              "#EB0A21" /* RED */,
+              "#056513" /* GREEN */,
+              "#820BEB" /* PURPLE */,
+              "#00A5F2" /* CYAN */,
+              "#9E4B19" /* BROWN */,
+              "#F7C522" /* YELLOW */,
+              "#E65C0C" /* ORANGE */,
+              "#050000" /* BLACK */,
+              "#4A494F" /* DARK GREY */,
             ];
-            let randomCol = "";
-            // eslint-disable-next-line no-plusplus
-            for (let i = 0; i < colors.length; i++) {
-              randomCol = colors[Math.floor(Math.random() * 12)];
-            }
-            return randomCol;
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            return colors[randomIndex];
           }
           setBgColor(getRandomColor());
         }}
@@ -69,8 +72,10 @@ export default function PlayerCounter() {
           type="text"
           className="inputName"
           ref={inputNameRef}
-          placeholder={name}
+          placeholder="Player's Name"
           onChange={handleName}
+          value={name.nickname}
+          name="nickname"
           style={{ backgroundColor: bgColor }}
         />
         <button
@@ -86,25 +91,19 @@ export default function PlayerCounter() {
             editButtonRef.current.style.display = "unset";
             function getRandomColor() {
               const colors = [
-                "#6b0505",
-                "#E800C3",
-                "#860909",
-                "#0e4b06",
-                "#4b0636;",
-                "#000000",
-                "#06414b",
-                "#FFFFFF",
-                "#EA5705",
-                "#E800C3",
-                "#57391D",
-                "#1E1E1E",
+                "#0956DB" /* BLUE */,
+                "#EB0A21" /* RED */,
+                "#056513" /* GREEN */,
+                "#820BEB" /* PURPLE */,
+                "#00A5F2" /* CYAN */,
+                "#9E4B19" /* BROWN */,
+                "#F7C522" /* YELLOW */,
+                "#E65C0C" /* ORANGE */,
+                "#050000" /* BLACK */,
+                "#4A494F" /* DARK GREY */,
               ];
-              let randomCol = "";
-              // eslint-disable-next-line no-plusplus
-              for (let i = 0; i < colors.length; i++) {
-                randomCol = colors[Math.floor(Math.random() * 16)];
-              }
-              return randomCol;
+              const randomIndex = Math.floor(Math.random() * colors.length);
+              return colors[randomIndex];
             }
             setBgColor(getRandomColor());
           }}
@@ -136,7 +135,7 @@ export default function PlayerCounter() {
           className="hidden"
           style={{ backgroundColor: bgColor }}
         >
-          {name}
+          {name.nickname}
         </h2>
         <article className="buttons">
           <button

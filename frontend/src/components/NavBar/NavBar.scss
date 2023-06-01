@@ -14,7 +14,7 @@ header {
 }
 
 header:hover {
-  transform: translateY(13vh);
+  transform: translateY(20vh);
   transition: all 0.3s linear;
 }
 
@@ -26,11 +26,44 @@ header:hover {
 
 .logo {
   height: 9em;
-  padding-top: 80%;
+  padding-top: 20%;
   // right: 25%;
   // left: 25%;
 }
 
-.translate {
-  transform: translateY(100px);
+
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 800px) and (orientation:landscape){
+  header{
+    height: 50vh;
+    position: absolute;
+    top: -45vh;
+    right: 15%;
+  }
+
+  header:hover {
+    transform: translateY(35vh);
+    transition: all 0.3s linear;
+  }
+
+  .logo{
+    padding-top: 20%;
+  }
 }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  header:hover {
+    transform: translateY(40vh);
+    transition: all 0.3s linear;
+  }
+
+  header{
+    height: 65vh;
+    position: absolute;
+    top: -55vh;
+    right: 15%;
+  }
+  .logo{
+    padding-top: 40%;
+  }
+  }
